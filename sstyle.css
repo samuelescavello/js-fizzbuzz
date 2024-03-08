@@ -1,0 +1,15 @@
+.box{
+    width: 90px;
+    height: 90px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 5px;
+}
+
+#boxes{
+    width: 1000px;
+    margin: 0 auto;
+}
