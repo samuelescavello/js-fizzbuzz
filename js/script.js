@@ -37,17 +37,30 @@
 
 
 const last = 100;
+let temp = '';
+let multipli
 
 for ( let i=1;  i <= last; i++){
     if ((i %3 === 0) && (i %5 === 0)){
-        console.log('fizzbuzz')
+        multipli = 'fizzbuzz'
     }else if (i %3 === 0){
-        console.log('fizz')
+        multipli = 'fizz'
     }else if (i %5 === 0){
-        console.log('buzz')
+        multipli = 'buzz'
     }else {
-        console.log (i)
+        multipli = i
     }
+    temp += `<div class="box ${multipli}">${multipli}</div>`
+    
 }
 
+
 const wrapper = document.createElement('div')
+wrapper.className = 'flex-wrap d-flex justify-content-between align-content-center'
+wrapper.setAttribute('id','boxes');
+wrapper.innerHTML = temp
+const beta = document.getElementById('app')
+beta.append(wrapper)
+
+
+

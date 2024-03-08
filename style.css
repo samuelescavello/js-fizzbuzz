@@ -13,3 +13,15 @@
     width: 1000px;
     margin: 0 auto;
 }
+
+.fizz{
+    background-color: brown;
+}
+
+.buzz{
+    background-color:  green;
+}
+
+.fizzbuzz{
+    background-color: chocolate;
+}
